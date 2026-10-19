@@ -1,5 +1,6 @@
 # Social Media Use and Mental Health: Correlation and Prediction
-*by Jane Le (started August 2026)*
+*by Jane Le*
+
 A small data science project looking at how social media habits relate to self-reported mental health, and whether those habits can predict who reports feeling depressed often.
 
 ![Correlation heatmap](figures/correlation_heatmap.png)
