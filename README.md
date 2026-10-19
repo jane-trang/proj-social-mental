@@ -20,6 +20,9 @@ A copy is in `data/smmh.csv`.
 
 I first looked at the Public Health Agency of Canada's [2018 HBSC report](https://www.canada.ca/en/public-health/services/publications/science-research-data/mental-health-problematic-social-media-use-canadian-adolescents.html) on adolescents' problematic social media use, but it only publishes summary results, not respondent-level data, so I used this public survey instead.
 
+## Notebook
+The full analysis (code, outputs and figures) is in [analysis.ipynb](analysis.ipynb). 
+
 ## Method
 - **Cleaning:** removed 3 respondents who don't use social media, grouped free-text gender answers, encoded daily time as an ordinal 0 to 5 scale, counted platforms per person.
 - **EDA:** distributions of time, age and depression score; mean depression score by time bucket with 95% CIs.
@@ -46,13 +49,6 @@ I first looked at the Public Health Agency of Canada's [2018 HBSC report](https:
 - **Single self-reported items.** "How often do you feel depressed?" is not a clinical diagnosis.
 - **Small data.** About 380 training rows and 96 test rows, so metrics have wide uncertainty (the CV scores vary from fold to fold).
 - **Threshold choice.** Splitting a 1 to 5 score at 4 is a modelling decision; other cut-offs would change the numbers.
-
-## How to run
-```bash
-pip install -r requirements.txt
-jupyter notebook analysis.ipynb
-```
-Figures are saved to `figures/`.
 
 ## Possible next steps
 - Use ordinal regression to predict the full 1 to 5 score.
