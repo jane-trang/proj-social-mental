@@ -17,7 +17,7 @@ I love doom-scrolling on social media, and I have a genuine interest in subjects
 An online survey with 481 responses: age, gender, occupation, platforms used, average daily time on social media, usage habits (purposeless use, distraction, social comparison, seeking validation) and 1 to 5 self-ratings of mental health symptoms.
 A copy is in `data/smmh.csv`.
 
-I first looked at the Public Health Agency of Canada's 2018 HBSC report on adolescents' problematic social media use, but it only publishes summary results, not respondent-level data, so I used this public survey instead.
+I first looked at the Public Health Agency of Canada's [2018 HBSC report](https://www.canada.ca/en/public-health/services/publications/science-research-data/mental-health-problematic-social-media-use-canadian-adolescents.html) on adolescents' problematic social media use, but it only publishes summary results, not respondent-level data, so I used this public survey instead.
 
 ## Method
 - **Cleaning:** removed 3 respondents who don't use social media, grouped free-text gender answers, encoded daily time as an ordinal 0 to 5 scale, counted platforms per person.
